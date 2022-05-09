@@ -1,0 +1,21 @@
+server:
+  port: 8080
+endpoints:
+  shutdown:
+    enabled: true
+  restart:
+    enabled: true
+
+#server.servlet.context-path: /aplicacion-funcionarios-service
+
+
+security:
+  basic:
+    enabled: false
+  oauth2:
+    resource:
+      jwt:
+        key-value: |
+          -----BEGIN PUBLIC KEY-----
+          MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA2r7+L5+KShc7FpPi+akTpD5dK7ENrMo9CQlWjvffMZR8vkzeF2NziKUTYhTXnM9VMA/g9xKt9NlXB93JjJHauw5p6CXTCYw2LNORCxFYNV9kc8xD67/YdZ6PnFNulF/8YHX3IP+bwuZWypm8qHitExz43Kqfj5LoktWLlJvRF7otB6ygiSAfae3kZD+00nGS2A4upqUwIyVrmAHGjHWcEvShhecac7Oep9fGLOqp0GCnh7UWAUIH7bUfl9ycujq5CAalCZKUuKnoQYpKw1h7l6f7xLQhlPc1Zpyi55Zj9xNVF+904m1nrEpzAcPvF/B9pICMDd1QBcMEGRau1BPcZQIDAQAB
+          -----END PUBLIC KEY-----
